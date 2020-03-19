@@ -1,0 +1,23 @@
+# git example commands most often used
+
+git init
+
+git add *
+
+git remote -v
+
+git remote rm origin
+
+git remote add origin http://github_url
+
+git remote add origin http://github_url
+
+git remote set-url origin http://github_url
+
+git remote set-url origin http://github_url
+
+git remote set-url origin git@github.com:ppreyer/first_app.git
+
+git push -u origin --all
+
+git status
