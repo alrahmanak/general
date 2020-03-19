@@ -1,0 +1,19 @@
+
+D:\jdk1.8.0_45\bin\jar -xvf ..\explorer.war
+- Jar example. Extract the files in the war file
+ 
+
+D:\angularws1\Explorer\build\libs>D:\jdk1.8.0_45\bin\jar -cvf explorer.war -C jarn .
+- Unjar all the files inside the folder jarn
+
+ 
+
+D:\jdk1.8.0_45\bin\jar -xvf D:\angularws1\Explorer\build\libs\explorer.war D:\angularws1\Explorer\build\libs\unjar
+-- This doesn't work
+
+ 
+
+rmdir D:\angularws1\Explorer\build\libs\unjar\* /s /q
+-- Remove all the files inside the directory unjar recursively
+-- /s means delete the file(s) from all subdirectories
+-- /q disables Yes/No prompting
