@@ -1,4 +1,5 @@
 # general
+
 General commands most useful for software developers
 - Jar
 - Unjar
@@ -12,4 +13,5 @@ Git Commands
 - Remote
 - Push
 
+# npm 
 Npm commands
