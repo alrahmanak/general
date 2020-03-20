@@ -1,0 +1,23 @@
+-- NPM and Angular
+# Install Latest version of node.js
+# Install latest version of npm
+npm install npm@latest -g
+git clone --depth 1 https://github.com/angularclass/angular2-webpack-starter.git
+
+# change directory to our repo
+cd angular2-webpack-starter
+
+# install the repo with npm
+npm install
+
+# start the server
+npm start
+
+# use Hot Module Replacement
+npm run server:dev:hmr
+
+Copy all explorer source in to this
+Copy all C:\Users\haame\AppData\Roaming\npm
+
+# add ag-grid-community edition to your npm repo
+npm add ag-grid-community
