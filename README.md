@@ -5,7 +5,7 @@ General commands most useful for software developers
 - Unjar
 - rmdir
 
-Git Commands
+Git Commands(https://github.com/alrahmanak/general/blob/master/git_examples.txt) 
 - Init
 - Add
 - Commit
@@ -13,5 +13,4 @@ Git Commands
 - Remote
 - Push
 
-# npm 
 Npm commands

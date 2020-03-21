@@ -1,10 +1,25 @@
 # git example commands most often used
 
+
+Checking status of files in your git repository
+```
+git status
+```
+
 git init
 
+```
 git add *
+```
 
+Commit to add your files to your local git repository
+```
+git commit -m "meaning ful comment"
+```
+
+```
 git remote -v
+```
 
 git remote rm origin
 
