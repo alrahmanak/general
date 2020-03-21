@@ -4,6 +4,7 @@
 Checking status of files in your git repository
 git status
 
+git config --global user.name "myusername"
 
 git init
 
