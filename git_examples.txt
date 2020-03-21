@@ -2,24 +2,22 @@
 
 
 Checking status of files in your git repository
-```
 git status
-```
+
 
 git init
 
-```
+ 
 git add *
-```
+ 
 
 Commit to add your files to your local git repository
-```
 git commit -m "meaning ful comment"
-```
-
-```
+ 
+git push -u origin --all
+ 
 git remote -v
-```
+ 
 
 git remote rm origin
 
@@ -32,7 +30,3 @@ git remote set-url origin http://github_url
 git remote set-url origin http://github_url
 
 git remote set-url origin git@github.com:ppreyer/first_app.git
-
-git push -u origin --all
-
-git status
