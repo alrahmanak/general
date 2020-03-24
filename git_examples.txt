@@ -1,5 +1,7 @@
 # git example commands most often used
 
+Check the git version
+git --version
 
 Checking status of files in your git repository
 git status
@@ -8,7 +10,6 @@ git config --global user.name "myusername"
 
 git init
 
- 
 git add *
  
 
@@ -31,3 +32,18 @@ git remote set-url origin http://github_url
 git remote set-url origin http://github_url
 
 git remote set-url origin git@github.com:ppreyer/first_app.git
+
+Remove the files from most recent commit
+git reset --soft HEAD~1
+
+Then to unstage the file from above step
+git reset HEAD <file name>
+
+If we are not interested that file anymore
+git rm --cached <file>
+
+Then commit the amendments
+git commit -amend
+
+To check that files are correctly removed from repository
+git ls-files
