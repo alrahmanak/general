@@ -1,14 +1,12 @@
-<html><body>
-    <p>
 # git example commands most often used
 
 Check the git version
-<code>git --version</code>
+ git --version 
 
 Checking status of files in your git repository
-<code>git status</code>
+ git status 
 
-<code>git config --global user.name "myusername"</code>
+ git config --global user.name "myusername" 
 
 git init
 
@@ -51,6 +49,3 @@ git commit -amend
 
 To check that files are correctly removed from repository
 git ls-files
-</p>
-</body>
-</html>
