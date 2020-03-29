@@ -1,0 +1,10 @@
+
+# List your windows environment variable
+Go to command prompt
+Enter "Set"
+
+# append a value to your user path variable
+setx variableName "Variable Value"
+
+Example: 
+setx Path "C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Documentum\Shared;D:\Dev\gradle-3.4\bin;D:\Dev\Maven\apache-maven-3.2.5\bin"

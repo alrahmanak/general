@@ -1,0 +1,5 @@
+
+# Two locations of Maven settings .xml
+
+1. <local maven installation dir>/conf/settings.xml
+2. c:\Users\myuser\.m2\

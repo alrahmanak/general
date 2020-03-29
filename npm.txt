@@ -1,4 +1,4 @@
--- NPM and Angular
+-- NPM and Angular Commands
 # Install Latest version of node.js
 # Install latest version of npm
 npm install npm@latest -g
@@ -21,3 +21,6 @@ Copy all C:\Users\haame\AppData\Roaming\npm
 
 # add ag-grid-community edition to your npm repo
 npm add ag-grid-community
+
+# Check angular version
+ng version
