@@ -1,0 +1,33 @@
+
+--- Jar commands
+
+D:\jdk1.8.0_45\bin\jar -xvf ..\explorer.war
+- Jar example. Extract the files in the war file
+ 
+
+D:\angularws1\Explorer\build\libs>D:\jdk1.8.0_45\bin\jar -cvf explorer.war -C jarn .
+- Unjar all the files inside the folder jarn
+
+ 
+
+D:\jdk1.8.0_45\bin\jar -xvf D:\angularws1\Explorer\build\libs\explorer.war D:\angularws1\Explorer\build\libs\unjar
+-- This doesn't work
+
+ 
+
+rmdir D:\angularws1\Explorer\build\libs\unjar\* /s /q
+-- Remove all the files inside the directory unjar recursively
+-- /s means delete the file(s) from all subdirectories
+-- /q disables Yes/No prompting
+
+
+--- Keytool
+-- Example of java keytool to add/update/delete security certificates from truststore
+-- "cacerts" is the default java jdk truststore in <JAVA_HOME>/jre/lib/security folder
+-- Example location : C:\java\jdk1.8.0_111\jre\lib\security\cacerts
+
+D:\jdk1.8.0_45\jre\bin\keytool -importcert -keystore cacerts -file ost1v_enp_aramco_com_sa.pem -alias nexus
+
+keytool -importcert -keystore dfctruststore.keystore -file brokercrt.der -alias broker
+
+
