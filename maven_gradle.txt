@@ -3,3 +3,16 @@
 
 1. <local maven installation dir>/conf/settings.xml
 2. c:\Users\myuser\.m2\
+
+# Maven, deleting all artifacts with .lastUpdated files
+
+For Windows
+
+CD (change directory) to
+<user-directory>\.m2\repository
+
+execute this command
+
+for /r %i in (*.lastUpdated) do del %i
+
+Right click your project and choose Update Dependencies

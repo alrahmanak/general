@@ -21,7 +21,7 @@ rmdir D:\angularws1\Explorer\build\libs\unjar\* /s /q
 -- /q disables Yes/No prompting
 
 
---- Keytool
+--- java Keytool
 -- Example of java keytool to add/update/delete security certificates from truststore
 -- "cacerts" is the default java jdk truststore in <JAVA_HOME>/jre/lib/security folder
 -- Example location : C:\java\jdk1.8.0_111\jre\lib\security\cacerts

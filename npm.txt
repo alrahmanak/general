@@ -24,3 +24,16 @@ npm add ag-grid-community
 
 # Check angular version
 ng version
+
+# Create new angular app
+ng new ex-design
+
+# generate new componet
+ng generate component xyz
+
+OR
+
+ng g c xyz
+
+# Very good online IDE to build angular apps
+https://stackblitz.com/
