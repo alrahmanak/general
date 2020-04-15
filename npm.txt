@@ -37,3 +37,6 @@ ng g c xyz
 
 # Very good online IDE to build angular apps
 https://stackblitz.com/
+
+# JSON 
+https://cswr.github.io/JsonSchema/
