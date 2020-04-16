@@ -35,8 +35,21 @@ OR
 
 ng g c xyz
 
+npm cache clean
+
+npm link
+
+npm install @angular/core --save
+
 # Very good online IDE to build angular apps
 https://stackblitz.com/
 
 # JSON 
 https://cswr.github.io/JsonSchema/
+
+#Install primeNg and font-awesome to your angular project
+npm install primeng font-awesome
+
+#Install bootstrap to your angular project
+npm install --save bootstrap
+npm install --save jquery
