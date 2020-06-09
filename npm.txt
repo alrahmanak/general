@@ -27,6 +27,8 @@ ng version
 
 # Create new angular app
 ng new ex-design
+# Create new angular app with routing
+ng new lazy-app --routing
 
 # generate new componet
 ng generate component xyz
@@ -53,3 +55,5 @@ npm install primeng font-awesome
 #Install bootstrap to your angular project
 npm install --save bootstrap
 npm install --save jquery
+
+# bower - https://bower.io/
