@@ -1,12 +1,17 @@
 # git example commands most often used
 
+
 Check the git version
  git --version 
 
 Checking status of files in your git repository
  git status 
 
- git config --global user.name "myusername" 
+Configuring username and password
+
+git config --global user.name "your username"
+
+git config --global user.password "your password"
 
 git init
 
