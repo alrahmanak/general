@@ -22,6 +22,8 @@ Commit to add your files to your local git repository
 git commit -m "meaning ful comment"
  
 git pull
+
+git checkout <branchname>
  
 git push -u origin --all
  

@@ -1,0 +1,104 @@
+Changing User
+===================================
+                su <username>
+
+Check Linux User Exists
+getent passwd <uname>
+
+ 
+
+Check what groups the user is in
+===================================
+groups <uname>
+
+Result: list of unames
+
+set
+
+Setting the path in linux
+===================================
+.cshrc file
+ 
+
+more /etc/shells
+
+printe
+
+Brief info about shell
+======================
+
+When you are interacting with unix in command line mode the program receiving, interpreting and processing your commands is called a shell.
+
+On our system ( neptune, poseidon etc) the particular shell is called csh (referred to as C-Shell).Other shell programs exist. One other common shell is ksh (K-Shell). To see a list of shells available, on our system type more /etc/shells at the unix prompt in your home directory
+
+You can create a special file in your home directory called .cshrc , which is read every time you begin a new csh ( C Shell ).
+
+One thing you can do in the .cshrc file is change the value of certain environment variables . Environment variables have names and store a value, and they affect the way a program operates. Certain programs expect certain environment variables to be set. For example, the shell that interprets your commands uses an environment variable called PATH which tells the shell where to look for commands.
+
+To see a list of the environment variables that are currently defined along with their values, type the command printenv at the unix command prompt. You can also specify a specific environment variable, e.g. printenv PATH will display the current value of PATH.
+
+ 
+
+There are two changes you might want to make in your .cshrc file so that Unix would be able to run a program for which it currently says "Command not found." You can either create an alias for that specific program, or change your path so that Unix checks the directory where that program is when you type in a command.
+
+ 
+
+Creating an Alias
+===================================
+In order to create an alias which will run a program not in your path, you need to know the full absolute path name of that command.  Then you should edit your .cshrc file with your preferred Unix editor (but be careful; lines in your .cshrc file may be over 80 characters and should not be automatically wrapped!) and add a line saying:
+
+alias commandname /full/absolute/path/of/program
+
+The alias command substitutes the final command for the middle command whenever you type it, so that when you type commandname, Unix automatically substitutes /full/absolute/path/of/program and knows where to find the program in question. Since the alias command is in your .cshrc, the alias command is executed every time you log into Unix, and therefore Unix always knows to substitute the latter command for the former.
+
+ 
+
+Changing Your Path
+===================================
+As explained above, your .cshrc file includes a ':' separated list of directories which are searched for an appropriate program when you type in a command.
+
+# the value of the path variable can be set by a command like
+# set path=directory1:directory2:directory3:
+# for example
+set path = /usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:.
+
+set path = $PATH:/work1/tools/node-v12.16.1-linux-x64/bin:.
+
+#and a path statement in your .cshrc would probably say:
+ set path = $PATH:/directory/to/add to $path or
+
+ setenv PATH $PATH":"'directory to add'
+
+How a command is searched in linux
+===================================
+ 
+When you type in a command, Unix checks the directories in your path, starting with the first (leftmost) directory and going on (right) from there, and looks for a program named that command. Please note that the set path command, like all the commands in your .cshrc, must be a single line regardless of how long that line is.
+
+The $PATH means the path that you have before the set path command takes effect. It should always be included when you set your path in your .cshrc so that you don't exclude the directories which are put in your path by the default Unix settings.
+
+To avoid having to type ./command_name to execute a program located in your current directory, just add the current directory to the PATH variable. The current directory has a special name, '.'
+
+Adding the following line to your .cshrc file will do this.
+setenv PATH $PATH":"'.'
+If you don't have a .cshrc file then create one using a text editor with the above line.
+Note: to see a file list which includes files which start with '.' use the command ls -al
+ 
+Checking NodeJS Server
+===================================
+
+https://www.digitalocean.com/community/questions/can-t-reach-my-node-js-application
+
+netstat
+If you run netstat -tulpn you should see the applications listening
+
+ 
+
+Grep
+grep -R "127.0.0.1" *
+
+grep -R "localhost" *
+
+ 
+
+Open port
+iptables -I INPUT -p tcp --dport 3000 -j ACCEPT

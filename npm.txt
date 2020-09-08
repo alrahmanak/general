@@ -10,6 +10,9 @@ cd angular2-webpack-starter
 # install the repo with npm
 npm install
 
+# uninstall globally
+npm uninstall -g phantomjs
+
 # start the server
 npm start
 
@@ -32,6 +35,9 @@ ng new lazy-app --routing
 
 # generate new componet
 ng generate component xyz
+
+# To know what is happening during component creation add --dry--run flag
+ng g c test --dry--run
 
 OR
 
